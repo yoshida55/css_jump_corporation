@@ -1,70 +1,290 @@
 /* ┌─────────────────────────────────────────┐
-   │ セクション名                        │
+   │ 共通セクション                        │
    └─────────────────────────────────────────┘ */
 
-.section-work {
-  padding: 60px 0;
-  background-color: #f9f9f9;
+.news_area,
+.business_area,
+.company_area {
+  max-width: 100rem;
+  margin: 0 auto;
+  /* Figmaで確認した値に変更 */
 }
 
+
+
+
+
+
+
+/* ┌─────────────────────────────────────────┐
+   │ ヘッダーセクション名                       │
+   └─────────────────────────────────────────┘ */
+
+
+/* ヘッダー（ロゴ・ナビゲーション）、問い合わせの左右を分ける */
+/*親flex  */
 .header_row {
   display: flex;
-  justify-content: center;
-  width: 40rem;
-  gap: 4rem;
   align-items: center;
-  height: 5rem;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 140rem;
+
+  margin: 0 auto;
+  height: 8rem;
+
+  padding-left: 4rem;
+
 }
 
+
+
+
+/* flex ヘッダーロゴ・ヘッダーナビゲーション */
+/* └ 親flex */
+.header_left_group {
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+/* 　└ ロゴ */
 .header_log_img {
-  width: 10rem;
+  width: 11rem;
   height: 2.6rem;
   display: block;
 }
 
+/* 　└ ナビ */
 .header-nav-list {
   display: flex;
-  gap: 2rem;
-  margin-right: 2rem;
+  gap: 4.8rem;
+  list-style: none;
 }
+
+
+
+
+/* お問い合わせボタン */
+.header_contact {
+  height: 8rem;
+  /* 80px */
+  width: 20rem;
+  /* 200px (1400pxベースならこれでピッタリ！) */
+  background-color: #000;
+
+
+  /* ボタン内の文字をど真ん中に置く設定 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* お問い合わせボタン */
+.header_contact a {
+  color: #fff;
+}
+
+
+
+
+
+
+/*  
+
+上記のメリット
+. 画面サイズへの柔軟な対応（レスポンシブ）
+大きな画面（2000pxなど）: max-width があるため、メニューが画面の端まで逃げていかず、中央の「見やすい範囲」に収まります。
+
+小さな画面（スマホなど）: width: 100% なので、画面の幅に合わせて自動で縮小します。
+
+2. レイアウトの「骨組み」を固定する
+padding: 画面の端からロゴまでの「最低限の距離」を保証します。
+
+gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接な関係」を保ちます。
+
+3. 作業の効率化（高橋さんの求める効率性）
+いちいち画面サイズごとに「ここは〇〇px」と計算しなくて済みます。
+
+一度ルール（Flexboxの設定）を決めてしまえば、あとはブラウザが自動計算してくれます。
+*/
 
 /* ┌─────────────────────────────────────────┐
    │ メイン　　　　　　                        │
    └─────────────────────────────────────────┘ */
+.main_visual_area {
+  width: 100%;
+  margin-bottom: 13rem;
+}
+
+
+.main_visual_img {
+  display: block;
+  width: 100%;
+  max-width: 140rem;
+  height: 60rem;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ NEWS                       │
+   └─────────────────────────────────────────┘ */
+.news_area {
+  margin-bottom: 13.3rem;
+}
+
 
 .news_title {
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 4rem;
-  /* padding: 3rem auto 3rem 3rem; */
-  margin: 3rem auto 3rem 3rem;
+  font-size: 3.6rem;
+  margin-bottom: 2.1rem;
 }
+
 .news_small_title {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
+
   /* font-weight: bold; */
-  margin-bottom: 4rem;
+  margin-bottom: 10.4rem;
   /* padding: 3rem auto 3rem 3rem; */
-  margin: 3rem auto 3rem 3rem;
+}
+
+.news_item {
+  border-left: 1px solid #000;
+  padding-left: 1rem;
+}
+
+.news_item:first-child {
+  border-left: none;
+  padding-left: 0;
 }
 
 .news_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  gap: 10rem;
+  justify-content: flex-start;
 }
 
-date {
+.date {
   display: inline-block;
   color: #888;
-  margin-bottom: 0.5rem;
+  margin: 0 1.9rem 2.2rem 0;
   white-space: nowrap;
 }
 
 .news_text_box {
   display: inline-block;
+  background-color: #000000;
+  color: white;
+
   margin-bottom: 0.5rem;
 }
+
+/* ┌─────────────────────────────────────────┐
+   │ ABOUT                                   │
+   └─────────────────────────────────────────┘ */
+
+.about_area {
+  max-width: 140rem;
+  width: 100%;
+  margin-bottom: 13.4rem;
+
+  height: 50rem;
+}
+
+.about_row {
+  display: flex;
+  gap: 7rem;
+
+  justify-content: flex-start;
+}
+
+.about_image {
+  width: 76rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.about_item {
+  margin-top: 20rem;
+}
+
+.about_title {
+  width: 16.7rem;
+  /* height: 3.6rem; */
+  font-size: 3.6rem;
+  margin-bottom: 2.1rem;
+}
+
+.about_small_title {
+  font-size: 1.4rem;
+  margin-bottom: 9.3rem;
+}
+
+.about_descripetion {
+  width: 47.3rem;
+
+}
+
+
+/* ┌─────────────────────────────────────────┐
+   │ BUSINESS                                │
+   └─────────────────────────────────────────┘ */
+
+/* ┌─────────────────────────────────────────┐
+   │ 事業内容セクション全体                    │
+   └─────────────────────────────────────────┘ */
+
+.business_area {
+  margin-bottom: 12rem;
+}
+
+/*   └ 子要素 */
+.business_title {
+  font-size: 3.6rem;
+  margin-bottom: 2.1rem;
+}
+
+/*   └ 子要素 */
+.business_small_title {
+  font-size: 1.4rem;
+  margin-bottom: 9.3rem;
+}
+
+/*   ▼ Flex親（4件のカードを横並び＋折り返し） */
+.business_row {
+  width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.4rem;
+  margin: 0 auto;
+}
+
+/*     └ Flex子要素（カード1枚分） */
+.business_item {
+  width: calc(50% - 3.2rem);
+  /* ← これを追加 */
+}
+
+.business_item:nth-child(odd) {
+  margin-top: 7rem;
+  /* 値は調整 */
+}
+
+/*       └ 子要素 */
+.business_item_title {}
+
+
+/*       └ 子要素 */
+.business_item img {
+  width: 36.8rem;
+  height: 23.2rem;
+  object-fit: cover;
+}
+
 
 /* --- レイアウト確認用（完成したら消す） --- */
 div,

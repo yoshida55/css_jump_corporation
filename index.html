@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/work.css" />
-    <title>タイトル</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- ===============================================
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/work.css" />
+  <title>タイトル</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- ===============================================
        ヘッダー
        =============================================== -->
-      <header class="header"> 
-        <div class="header_area">
-          <!-- flex ロゴ画像とナビゲーションを分ける -->
-          <div class="header_row"> 
+    <header class="header">
+      <div class="header_area">
+        <!-- flex ヘッダー（ロゴ・ナビゲーション）、問い合わせの左右を分ける -->
+        <div class="header_row">
+          <!--  └  flex ヘッダーロゴ・ヘッダーナビゲーション -->
+          <div class="header_left_group">
+            <!-- 　└  -->
             <div class="header_logo">
-              <a href="#"
-                ><img class="header_log_img" src="img/logo.svg" alt="ロゴ"
-              /></a>
+              <a href="#"><img class="header_log_img" src="img/logo.svg" alt="ロゴ" /></a>
             </div>
+            <!-- 　└  -->
             <nav>
               <ul class="header-nav-list">
                 <li><a href="#">NEWS</a></li>
@@ -31,155 +35,162 @@
               </ul>
             </nav>
           </div>
+
+          <!-- └  header_row-->
+          <div class="header_contact">
+            <a href="#">お問い合わせ</a>
+          </div>
         </div>
-      </header>
-      <!-- ===============================================
+      </div>
+    </header>
+    <!-- ===============================================
        メイン
        =============================================== -->
-      <main class="main">
-        <!-- メインビジュアル・職場 -->
-        <section>
-          <div class="main_visual_container">
-            <img src="img/mainvisual.jpg" alt="おしゃれな職場" />
-          </div>
-        </section>
-        <!-- ===============================================
+    <main class="main">
+      <!-- メインビジュアル・職場 -->
+      <section class="main_visual_area">
+        <div class="main_visual_container">
+          <img class="main_visual_img" src="img/mainvisual.jpg" alt="おしゃれな職場" />
+        </div>
+      </section>
+      <!-- ===============================================
          ニュースエリア
          =============================================== -->
-        <section class="news_area">
-          <div class="news_title">NEWS</div>
-          <div class="news_small_title">ニュース</div>
-          <!-- flex 日付とタイトルを横並びにする 3件表示 -->
-          <div class="news_list">
-            <div class="news_item">
-              <div class="date">2021.01.01</div>
-              <div class="news_text_box">NEWS</div>
-              <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
-            </div>
-            <div class="news_item">
-              <div class="date">2021.01.01</div>
-              <div class="news_text_box">NEWS</div>
-              <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
-            </div>
-            <div class="news_item">
-              <div class="date">2021.01.01</div>
-              <div class="news_text_box"></div>
-              <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
-            </div>
+      <section class="news_area">
+        <div class="news_title">NEWS</div>
+        <div class="news_small_title">ニュース</div>
+        <!-- flex 日付とタイトルを横並びにする 3件表示 -->
+        <div class="news_list">
+          <div class="news_item">
+            <div class="date">2021.01.01</div>
+            <div class="news_text_box">NEWS</div>
+            <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
           </div>
-        </section>
-        <!-- ===============================================
+          <div class="news_item">
+            <div class="date">2021.01.01</div>
+            <div class="news_text_box">NEWS</div>
+            <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
+          </div>
+          <div class="news_item">
+            <div class="date">2021.01.01</div>
+            <div class="news_text_box"></div>
+            <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
          Aboutエリア
          =============================================== -->
-        <section class="about_area">
-          <div class="about_row">
-            <img src="img/about.jpg" alt="スローガン画像" />
-            <div class="about_item">
-              <div class="about_title">ABOUT</div>
-              <div class="about_small_title">私たちについて</div>
-              <p class="about_descripetion">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </div>
+      <section class="about_area">
+        <div class="about_row">
+          <img class="about_image" src="img/about.jpg" alt="スローガン画像" />
+          <div class="about_item">
+            <div class="about_title">ABOUT</div>
+            <div class="about_small_title">私たちについて</div>
+            <p class="about_descripetion">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
           </div>
-        </section>
-        <!-- ===============================================
+        </div>
+      </section>
+      <!-- ===============================================
          Businessエリア
          =============================================== -->
-        <section class="business_area">
-          <div class="business_title">BUSINESS</div>
-          <div class="business_small_title">事業内容</div>
-          <!-- flex タイトル・画像を折り返し 4件表示 -->
-          <div class="business_row">
-            <div class="business_item">
-              <div class="business_img_title">Web制作・マーケティング</div>
-              <img src="img/business1.jpg" alt="打合せ風景" />
-            </div>
-            <div class="business_item">
-              <div class="business_item_title">プロモーション企画・制作</div>
-              <img src="img/business3.jpg" alt="撮影用カメラ" />
-            </div>
-            <div class="business_item">
-              <div class="business_item_title">インターネットメディア事業</div>
-              <img src="img/business2.jpg" alt="ディスプレイ" />
-            </div>
-            <div class="business_item">
-              <div class="business_item_title">ソーシャル企画・運営</div>
-              <img src="img/business4.jpg" alt="スマホの画面" />
-            </div>
+      <section class="business_area">
+        <div class="business_title">BUSINESS</div>
+        <div class="business_small_title">事業内容</div>
+        <!-- flex タイトル・画像を折り返し 4件表示 -->
+        <div class="business_row">
+          <div class="business_item">
+            <div class="business_item_title">Web制作・マーケティング</div>
+            <img src="img/business1.jpg" alt="打合せ風景" />
           </div>
-        </section>
+          <div class="business_item">
+            <div class="business_item_title">プロモーション企画・制作</div>
+            <img src="img/business3.jpg" alt="撮影用カメラ" />
+          </div>
+          <div class="business_item">
+            <div class="business_item_title">インターネットメディア事業</div>
+            <img src="img/business2.jpg" alt="ディスプレイ" />
+          </div>
+          <div class="business_item">
+            <div class="business_item_title">ソーシャル企画・運営</div>
+            <img src="img/business4.jpg" alt="スマホの画面" />
+          </div>
+        </div>
+      </section>
 
-        <!-- ===============================================
+      <!-- ===============================================
          COMPANYエリア
          =============================================== -->
 
-        <section id="company_area">
-          <div class="company_title">COMPANY</div>
-          <div class="company_small_title">会社情報</div>
-          <table class="company_table">
-            <tr>
-              <th>会社名</th>
-              <td>ウェブエンターテイメントデザイン株式会社</td>
-            </tr>
-            <tr>
-              <th>所在地</th>
-              <td>東京都渋谷区桜丘町99-9 West Building 3F</td>
-            </tr>
-            <tr>
-              <th>代表</th>
-              <td>ＸＸＸＸＸＸ</td>
-            </tr>
-            <tr>
-              <th>設立</th>
-              <td>2021年1月1日</td>
-            </tr>
-            <tr>
-              <th>資本金</th>
-              <td>3,000,000円</td>
-            </tr>
-            <tr>
-              <th>代表者</th>
-              <td>代表 太郎</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>Web制作・マーケティング</td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>インターネットメディア事業</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>プロモーション企画・制作</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>ソーシャル企画・運営</td>
-            </tr>
-          </table>
-          <img class="company_img" src="img/company.jpg" alt="社内の風景" />
-        </section>
-      </main>
+      <section class="company_area">
+        <div class="company_title">COMPANY</div>
+        <div class="company_small_title">会社情報</div>
+        <table class="company_table">
+          <tr>
+            <th>会社名</th>
+            <td>ウェブエンターテイメントデザイン株式会社</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>東京都渋谷区桜丘町99-9 West Building 3F</td>
+          </tr>
+          <tr>
+            <th>代表</th>
+            <td>ＸＸＸＸＸＸ</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>2021年1月1日</td>
+          </tr>
+          <tr>
+            <th>資本金</th>
+            <td>3,000,000円</td>
+          </tr>
+          <tr>
+            <th>代表者</th>
+            <td>代表 太郎</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>Web制作・マーケティング</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>インターネットメディア事業</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>プロモーション企画・制作</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>ソーシャル企画・運営</td>
+          </tr>
+        </table>
+        <img class="company_img" src="img/company.jpg" alt="社内の風景" />
+      </section>
+    </main>
 
-      <!-- ===============================================
+    <!-- ===============================================
          footerエリア
          =============================================== -->
-      <footer class="footer">
-        <!-- flex wedと会社情報を表示する -->
-        <div class="footer_row">
-          <img class="footer_logo" src="img/logo.svg" alt="WED" /> >
-          <p class="footer_company_info">
-            Web Entertainment Design Inc. West Building 3F 9-99 Sakuragaokacho
-            Shibuya-ku Tokyo, Japan 150-0031 T/99-9999-9999
-          </p>
-        </div>
-        <div class=""></div>
-      </footer>
-    </div class = "copy right">
+    <footer class="footer">
+      <!-- flex wedと会社情報を表示する -->
+      <div class="footer_row">
+        <img class="footer_logo" src="img/logo.svg" alt="WED" /> >
+        <p class="footer_company_info">
+          Web Entertainment Design Inc. West Building 3F 9-99 Sakuragaokacho
+          Shibuya-ku Tokyo, Japan 150-0031 T/99-9999-9999
+        </p>
+      </div>
+      <div class=""></div>
+    </footer>
+    <div class="copy right">
       © Web Entertainment Design Inc.
     </div>
     <script src="js/work.js"></script>
-  </body>
+</body>
+
 </html>
