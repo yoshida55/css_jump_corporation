@@ -1,0 +1,48 @@
+/* ┌─────────────────────────────────────────┐
+   │ セクション名                        │
+   └─────────────────────────────────────────┘ */
+
+.section-work {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.header_log_img {
+  width: 10rem;
+  height: 2.6rem;
+  display: block;
+
+  margin: 3.1rem auto 2rem 2rem;
+}
+
+
+
+/* --- レイアウト確認用（完成したら消す） --- */
+div,
+section,
+article,
+header,
+footer,
+nav,
+main {
+  outline: 1px solid red !important;
+}
+
+img,
+svg {
+  outline: 1px solid blue !important;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+li {
+  outline: 1px solid limegreen !important;
+}
