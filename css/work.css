@@ -10,7 +10,12 @@
   /* Figmaで確認した値に変更 */
 }
 
-
+.wrapper {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+  font-family: "Meiryo", "メイリオ", sans-serif;
+}
 
 
 
@@ -266,7 +271,6 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 /*     └ Flex子要素（カード1枚分） */
 .business_item {
   width: calc(50% - 3.2rem);
-  /* ← これを追加 */
 }
 
 .business_item:nth-child(odd) {
@@ -287,7 +291,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
 
 /* --- レイアウト確認用（完成したら消す） --- */
-div,
+/* div,
 section,
 article,
 header,
@@ -314,4 +318,4 @@ span,
 a,
 li {
   outline: 1px solid limegreen !important;
-}
+} */
