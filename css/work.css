@@ -124,10 +124,14 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
 .news_small_title {
   font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
 
-  /* font-weight: bold; */
-  margin-bottom: 10.4rem;
-  /* padding: 3rem auto 3rem 3rem; */
+.news_border {
+  width: 4rem;
+  color: #000000;
+  margin-bottom: 6.4rem;
+  border-bottom: 0.3rem solid #000;
 }
 
 .news_item {
@@ -143,7 +147,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 .news_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 8rem;
   justify-content: flex-start;
 }
 
@@ -152,6 +156,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
   color: #888;
   margin: 0 1.9rem 2.2rem 0;
   white-space: nowrap;
+  font-size: 1.4rem;
 }
 
 .news_text_box {
@@ -160,6 +165,11 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
   color: white;
 
   margin-bottom: 0.5rem;
+}
+
+.news_descripetion {
+  font-size: 1.6rem;
+  color: #333333;
 }
 
 /* ┌─────────────────────────────────────────┐
@@ -171,7 +181,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
   width: 100%;
   margin-bottom: 13.4rem;
 
-  height: 50rem;
+  /* height: 50rem; */
 }
 
 .about_row {
@@ -180,6 +190,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
   justify-content: flex-start;
 }
+
 
 .about_image {
   width: 76rem;
@@ -200,11 +211,19 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
 .about_small_title {
   font-size: 1.4rem;
-  margin-bottom: 9.3rem;
+  margin-bottom: 5.3rem;
+}
+
+.about_border {
+  width: 4rem;
+  color: #000000;
+  margin-bottom: 3.4rem;
+  border-bottom: 0.3rem solid #000;
 }
 
 .about_descripetion {
   width: 47.3rem;
+  font-size: 1.4rem;
 }
 
 /* ┌─────────────────────────────────────────┐
@@ -228,15 +247,25 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 /*   └ 子要素 */
 .business_small_title {
   font-size: 1.4rem;
-  margin-bottom: 9.3rem;
+  margin-bottom: 5.3rem;
 }
+
+.business_border {
+  width: 4rem;
+  color: #000000;
+  margin-bottom: 3.4rem;
+  border-bottom: 0.3rem solid #000;
+}
+
 
 /*   ▼ Flex親（4件のカードを横並び＋折り返し） */
 .business_row {
   width: 80rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 6.4rem;
+
+  row-gap: 1.7rem;
+  column-gap: 6.4rem;
   margin: 0 auto;
 }
 
@@ -252,6 +281,8 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
 /*       └ 子要素 */
 .business_item_title {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 
 /*       └ 子要素 */
@@ -272,7 +303,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 /*   ▼ Flex親（左：会社情報、右：画像） */
 .company_area {
   display: flex;
-  gap: -6.4rem;
+  /* gap: -6.4rem; */
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -297,32 +328,50 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 /*       └ 子要素 */
 .company_small_title {
   font-size: 1.4rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 3.4rem;
+}
+
+.company_border {
+  width: 4rem;
+  color: #000000;
+  margin-bottom: 3.4rem;
+  border-bottom: 0.3rem solid #000;
 }
 
 /*       └ 子要素 */
 .company_table {
-  border-collapse: collapse; /* セル間の隙間をなくす */
+  border-collapse: collapse;
+  /* セル間の隙間をなくす */
 }
 
 /*         └ 子要素 */
 .company_table th {
   font-size: 1.4rem;
-  text-align: left; /* 左揃え */
-  padding: 0.7rem 1.7rem 0.7rem 0; /* 上 右 下 左 */
-  vertical-align: top; /* 上揃え */
-  white-space: nowrap; /* 折り返さない */
-  font-weight: normal; /* 太字を解除（デフォルトは太字） */
+  text-align: left;
+  /* 左揃え */
+  padding: 0.7rem 1.7rem 0.7rem 0;
+  /* 上 右 下 左 */
+  vertical-align: top;
+  /* 上揃え */
+  white-space: nowrap;
+  /* 折り返さない */
+  font-weight: normal;
+  /* 太字を解除（デフォルトは太字） */
 }
 
 /*         └ 子要素 */
 .company_table td {
   font-size: 1.4rem;
-  text-align: left; /* 左揃え */
-  padding: 0.7rem 1.7rem 0.7rem 0; /* 上 右 下 左 */
-  vertical-align: top; /* 上揃え */
-  white-space: nowrap; /* 折り返さない */
-  font-weight: normal; /* 太字を解除（デフォルトは太字） */
+  text-align: left;
+  /* 左揃え */
+  padding: 0.7rem 1.7rem 0.7rem 0;
+  /* 上 右 下 左 */
+  vertical-align: top;
+  /* 上揃え */
+  white-space: nowrap;
+  /* 折り返さない */
+  font-weight: normal;
+  /* 太字を解除（デフォルトは太字） */
 }
 
 /*     └ Flex子要素（右側：画像） */
@@ -351,8 +400,181 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
 .footer_company_info {
   display: block;
-  /* padding-right: 2rem 0; */
-}
-/* ===============================================.{
+  width: 21.1rem;
+  margin-right: 4rem;
 }
 
+.copy_right {
+  width: 30rem;
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 2.2rem;
+  margin-left: 20rem;
+}
+
+@media screen and (max-width: 699.98px) {
+
+  .header_row,
+  .news_list,
+  .about_row,
+  .business_row,
+  .company_area,
+  .footer_row {
+    flex-direction: column;
+    /* 縦並びに変更 */
+  }
+
+  .news_area,
+  .about_item,
+  .business_area,
+  .company_area,
+  .footer_erea,
+  .about_area {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+
+  .header_row {
+    padding-left: 0rem;
+    align-items: flex-start;
+    padding-left: 1.6rem;
+    height: 7rem;
+  }
+
+
+  /* お問い合わせボタン */
+  .header_contact {
+    height: 0rem;
+    width: 0rem;
+  }
+
+  /* flex ヘッダーロゴ・ヘッダーナビゲーション */
+  /* └ 親flex */
+  .header_left_group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  /* 　└ ロゴ */
+  .header_log_img {
+    margin-top: 1.6rem;
+    width: 11rem;
+    height: 2.6rem;
+    display: block;
+    object-fit: cover;
+  }
+
+
+  .main_visual_area {
+    margin-bottom: 9rem;
+  }
+
+  .news_list {
+    gap: 4.9rem;
+  }
+
+  .about_image {
+    width: 37.5rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .news_area {
+    margin-bottom: 4rem;
+  }
+
+  .about_area {
+    margin-bottom: 4rem;
+  }
+
+  .about_item {
+    margin-top: 0rem;
+  }
+
+
+  /* ┌─────────────────────────────────────────┐
+     │ 会社情報エリア全体                        │
+     └─────────────────────────────────────────┘ */
+
+  .company_img {
+    width: 34.3rem;
+    height: 40rem;
+    margin-left: 0rem;
+  }
+
+  .company_info {
+    width: auto;
+    padding-top: 5rem;
+    padding-left: 2rem;
+  }
+
+  /* テーブル全体をブロック化 */
+  .company_table {
+    display: block;
+    width: 100%;
+  }
+
+  /* tbody（暗黙的に存在）もブロック化 */
+  .company_table tbody {
+    display: block;
+  }
+
+  /* 各行をブロック化 */
+  .company_table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  /* 見出しセル（th）をブロック化 */
+  .company_table th {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    font-weight: normal;
+  }
+
+  /* データセル（td）をブロック化 */
+  .company_table td {
+    display: block;
+    width: 100%;
+    padding-left: 1em;
+    /* 少しインデント */
+  }
+
+
+
+
+  /* --- レイアウト確認用（完成したら消す） --- */
+  div,
+  section,
+  article,
+  header,
+  footer,
+  nav,
+  main {
+    outline: 1px solid red !important;
+  }
+
+  img,
+  svg {
+    outline: 1px solid blue !important;
+    background-color: rgba(0, 0, 255, 0.1);
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  a,
+  li {
+    outline: 1px solid limegreen !important;
+  }
+}
