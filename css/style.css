@@ -3,19 +3,12 @@ Theme Name:
 */
 
 html {
-  font-size: calc(10 / 1400 * 100vw);
+  /* font-size: calc(10 / 1400 * 100vw); */
   /* 画面幅1000pxで10px*/
+
+  font-size: min(calc(10 / 1400 * 100vw), 10px);
 }
 
-:root {}
-
-/* 
-Regular 400
-Medium 500
-SemiBold 600
-Bold 700
-ExtraBold 800
-*/
 img {
   width: 100%;
   object-fit: cover;

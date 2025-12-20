@@ -15,16 +15,12 @@
   max-width: 140rem;
   margin: 0 auto;
   font-family: "Meiryo", "メイリオ", sans-serif;
+  background-color: #f0f0f0;
 }
-
-
-
-
 
 /* ┌─────────────────────────────────────────┐
    │ ヘッダーセクション名                       │
    └─────────────────────────────────────────┘ */
-
 
 /* ヘッダー（ロゴ・ナビゲーション）、問い合わせの左右を分ける */
 /*親flex  */
@@ -32,35 +28,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
   max-width: 140rem;
-
-  margin: 0 auto;
   height: 8rem;
-
   padding-left: 4rem;
-
 }
-
-
-
 
 /* flex ヘッダーロゴ・ヘッダーナビゲーション */
 /* └ 親flex */
 .header_left_group {
-
   display: flex;
   align-items: center;
   gap: 4rem;
 }
-
 
 /* 　└ ロゴ */
 .header_log_img {
   width: 11rem;
   height: 2.6rem;
   display: block;
+  object-fit: cover;
 }
 
 /* 　└ ナビ */
@@ -70,17 +57,11 @@
   list-style: none;
 }
 
-
-
-
 /* お問い合わせボタン */
 .header_contact {
   height: 8rem;
-  /* 80px */
   width: 20rem;
-  /* 200px (1400pxベースならこれでピッタリ！) */
   background-color: #000;
-
 
   /* ボタン内の文字をど真ん中に置く設定 */
   display: flex;
@@ -92,11 +73,6 @@
 .header_contact a {
   color: #fff;
 }
-
-
-
-
-
 
 /*  
 
@@ -125,7 +101,6 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
   margin-bottom: 13rem;
 }
 
-
 .main_visual_img {
   display: block;
   width: 100%;
@@ -141,7 +116,6 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 .news_area {
   margin-bottom: 13.3rem;
 }
-
 
 .news_title {
   font-size: 3.6rem;
@@ -231,9 +205,7 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 
 .about_descripetion {
   width: 47.3rem;
-
 }
-
 
 /* ┌─────────────────────────────────────────┐
    │ BUSINESS                                │
@@ -279,8 +251,8 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
 }
 
 /*       └ 子要素 */
-.business_item_title {}
-
+.business_item_title {
+}
 
 /*       └ 子要素 */
 .business_item img {
@@ -289,33 +261,98 @@ gap: 画面が広くなっても狭くなっても、ロゴとナビの「密接
   object-fit: cover;
 }
 
+/* ===============================================
+   COMPANYエリア
+ =============================================== */
 
-/* --- レイアウト確認用（完成したら消す） --- */
-/* div,
-section,
-article,
-header,
-footer,
-nav,
-main {
-  outline: 1px solid red !important;
+/* ┌─────────────────────────────────────────┐
+   │ 会社情報セクション（左右配置）            │
+   └─────────────────────────────────────────┘ */
+
+/*   ▼ Flex親（左：会社情報、右：画像） */
+.company_area {
+  display: flex;
+  gap: -6.4rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 11rem;
 }
 
-img,
-svg {
-  outline: 1px solid blue !important;
-  background-color: rgba(0, 0, 255, 0.1);
+/*     └ Flex子要素（左側：情報まとめ） */
+.company_info {
+  width: 56.7rem;
+  height: 64rem;
+  background-color: #ffffff;
+  padding-top: 11rem;
+  padding-left: 6.2rem;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-a,
-li {
-  outline: 1px solid limegreen !important;
-} */
+/*       └ 子要素 */
+.company_title {
+  font-size: 3.6rem;
+  margin-bottom: 2.1rem;
+}
+
+/*       └ 子要素 */
+.company_small_title {
+  font-size: 1.4rem;
+  margin-bottom: 6.4rem;
+}
+
+/*       └ 子要素 */
+.company_table {
+  border-collapse: collapse; /* セル間の隙間をなくす */
+}
+
+/*         └ 子要素 */
+.company_table th {
+  font-size: 1.4rem;
+  text-align: left; /* 左揃え */
+  padding: 0.7rem 1.7rem 0.7rem 0; /* 上 右 下 左 */
+  vertical-align: top; /* 上揃え */
+  white-space: nowrap; /* 折り返さない */
+  font-weight: normal; /* 太字を解除（デフォルトは太字） */
+}
+
+/*         └ 子要素 */
+.company_table td {
+  font-size: 1.4rem;
+  text-align: left; /* 左揃え */
+  padding: 0.7rem 1.7rem 0.7rem 0; /* 上 右 下 左 */
+  vertical-align: top; /* 上揃え */
+  white-space: nowrap; /* 折り返さない */
+  font-weight: normal; /* 太字を解除（デフォルトは太字） */
+}
+
+/*     └ Flex子要素（右側：画像） */
+.company_img {
+  width: 54.7rem;
+  height: 40rem;
+  margin-left: -12rem;
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ フッターエリア　　　　　　　　            │
+   └─────────────────────────────────────────┘ */
+.footer_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 10rem;
+  height: 2.5rem;
+  display: block;
+  object-fit: cover;
+  margin-left: 20rem;
+}
+
+.footer_company_info {
+  display: block;
+  /* padding-right: 2rem 0; */
+}
+/* ===============================================.{
+}
+
