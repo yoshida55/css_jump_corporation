@@ -409,7 +409,8 @@ li {
   .about_item,
   .business_area,
   .company_area,
-  .footer_erea {
+  .footer_erea,
+  .copy_right {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -438,7 +439,6 @@ li {
 
 
   .header_row {
-    padding-left: 0rem;
     align-items: flex-start;
     padding-left: 1.6rem;
     height: 7rem;
@@ -574,33 +574,22 @@ li {
     padding-bottom: 0em;
   }
 
-  /* --- レイアウト確認用（完成したら消す） --- */
-  div,
-  section,
-  article,
-  header,
-  footer,
-  nav,
-  main {
-    outline: 1px solid red !important;
+  /* ┌─────────────────────────────────────────┐
+     │ レスポンシブ　フッター                     │
+     └─────────────────────────────────────────┘ */
+  .footer_erea {
+    margin-bottom: 4.7rem;
   }
 
-  img,
-  svg {
-    outline: 1px solid blue !important;
-    background-color: rgba(0, 0, 255, 0.1);
+  .footer_row {
+    display: flex;
+
+
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.4rem;
+
   }
 
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  span,
-  a,
-  li {
-    outline: 1px solid limegreen !important;
-  }
+
 }
