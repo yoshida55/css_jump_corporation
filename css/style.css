@@ -7,7 +7,7 @@ html {
   /* 画面幅1000pxで10px*/
 
   /* font-size: min(calc(10 / 1400 * 100vw), 10px); */
-  font-size: clamp(8px, calc(10 / 1400 * 100vw), 10px);
+  font-size: min(calc(10 / 1400 * 100vw), 10px);
 }
 
 img {

@@ -3,29 +3,38 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- レスポンシブ対応 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS読み込み -->
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/work.css" />
+
   <title>タイトル</title>
 </head>
 
 <body>
+  <!-- サイト全体ラッパー -->
   <div class="wrapper">
-    <!-- ===============================================
-       ヘッダー
-       =============================================== -->
+
+    <!-- =====================
+         ヘッダー
+         ロゴ・ナビ・お問い合わせ
+         ===================== -->
     <header class="header">
       <div class="header_area">
-        <!-- flex ヘッダー（ロゴ・ナビゲーション）、問い合わせの左右を分ける -->
         <div class="header_row">
-          <!--  └  flex ヘッダーロゴ・ヘッダーナビゲーション -->
+
+          <!-- ロゴ＋ナビ -->
           <div class="header_left_group">
-            <!-- 　└  -->
             <div class="header_logo">
-              <a href="#"><img class="header_log_img" src="img/logo.svg" alt="ロゴ" /></a>
+              <a href="#">
+                <img class="header_log_img" src="img/logo.svg" alt="ロゴ" />
+              </a>
             </div>
-            <!-- 　└  -->
+
+            <!-- グローバルナビ -->
             <nav>
               <ul class="header-nav-list">
                 <li><a href="#">NEWS</a></li>
@@ -36,102 +45,140 @@
             </nav>
           </div>
 
-          <!-- └  header_row-->
+          <!-- お問い合わせ -->
           <div class="header_contact">
             <a href="#">お問い合わせ</a>
           </div>
+
         </div>
       </div>
     </header>
-    <!-- ===============================================
-       メイン
-       =============================================== -->
+
     <main class="main">
-      <!-- メインビジュアル・職場 -->
+
+      <!-- =====================
+           メインビジュアル
+           ===================== -->
       <section class="main_visual_area">
         <div class="main_visual_container">
           <img class="main_visual_img" src="img/mainvisual.jpg" alt="おしゃれな職場" />
         </div>
       </section>
-      <!-- ===============================================
-         ニュースエリア
-         =============================================== -->
+
+      <!-- =====================
+           NEWS：お知らせ一覧
+           ===================== -->
       <section class="news_area">
-        <h2 class="news_title">NEWS</h2>
-        <div class="news_small_title">ニュース</div>
-        <div class="news_border"></div>
-        <!-- flex 日付とタイトルを横並びにする 3件表示 -->
+        <!-- セクション見出し -->
+        <h2 class="news_title section_title_common">NEWS</h2>
+        <div class="news_small_title section_subtitle_common">ニュース</div>
+        <div class="news_border section_border_common"></div>
+
+        <!-- ニュースリスト -->
         <div class="news_list">
+
+          <!-- ニュース1件 -->
           <div class="news_item">
             <div class="date">2021.01.01</div>
             <div class="news_text_box">NEWS</div>
-            <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
-          </div>
-          <div class="news_item">
-            <div class="date">2021.01.01</div>
-            <div class="news_text_box">NEWS</div>
-            <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
-          </div>
-          <div class="news_item">
-            <div class="date">2021.01.01</div>
-            <div class="news_text_box">NEWS</div>
-            <p class="news_descripetion">タイトルタイトルタイトルタイトル</p>
-          </div>
-        </div>
-      </section>
-      <!-- ===============================================
-         Aboutエリア
-         =============================================== -->
-      <section class="about_area">
-        <div class="about_row">
-          <img class="about_image" src="img/about.jpg" alt="スローガン画像" />
-          <div class="about_item">
-            <h2 class="about_title">ABOUT</h2>
-            <div class="about_small_title">私たちについて</div>
-            <div class="about_border"></div>
-            <p class="about_descripetion">
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            <p class="news_descripetion">
+              タイトルタイトルタイトルタイトル
             </p>
           </div>
+
+          <!-- ニュース2件 -->
+          <div class="news_item">
+            <div class="date">2021.01.01</div>
+            <div class="news_text_box">NEWS</div>
+            <p class="news_descripetion">
+              タイトルタイトルタイトルタイトル
+            </p>
+          </div>
+
+          <!-- ニュース3件 -->
+          <div class="news_item">
+            <div class="date">2021.01.01</div>
+            <div class="news_text_box">NEWS</div>
+            <p class="news_descripetion">
+              タイトルタイトルタイトルタイトル
+            </p>
+          </div>
+
         </div>
       </section>
-      <!-- ===============================================
-         Businessエリア
-         =============================================== -->
+
+      <!-- =====================
+           ABOUT：会社紹介
+           ===================== -->
+      <section class="about_area">
+        <div class="about_row">
+
+          <!-- コンセプト画像 -->
+          <img class="about_image" src="img/about.jpg" alt="スローガン画像" />
+
+          <!-- テキスト -->
+          <div class="about_item">
+            <h2 class="about_title section_title_common">ABOUT</h2>
+            <div class="about_small_title section_subtitle_common">
+              私たちについて
+            </div>
+            <div class="about_border section_border_common"></div>
+
+            <p class="about_descripetion">
+              テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト
+
+
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================
+           BUSINESS：事業内容
+           ===================== -->
       <section class="business_area">
-        <h2 class="business_title">BUSINESS</h2>
-        <div class="business_small_title">事業内容</div>
-        <div class="business_border"></div>
-        <!-- flex タイトル・画像を折り返し 4件表示 -->
+        <h2 class="business_title section_title_common">BUSINESS</h2>
+        <div class="business_small_title section_subtitle_common">事業内容</div>
+        <div class="business_border section_border_common"></div>
+
+        <!-- 事業一覧 -->
         <div class="business_row">
+
           <div class="business_item">
             <div class="business_item_title">Web制作・マーケティング</div>
             <img src="img/business1.jpg" alt="打合せ風景" />
           </div>
+
           <div class="business_item">
             <div class="business_item_title">プロモーション企画・制作</div>
             <img src="img/business3.jpg" alt="撮影用カメラ" />
           </div>
+
           <div class="business_item">
             <div class="business_item_title">インターネットメディア事業</div>
             <img src="img/business2.jpg" alt="ディスプレイ" />
           </div>
+
           <div class="business_item">
             <div class="business_item_title">ソーシャル企画・運営</div>
             <img src="img/business4.jpg" alt="スマホの画面" />
           </div>
+
         </div>
       </section>
 
-      <!-- ===============================================
-         COMPANYエリア
-         =============================================== -->
-
+      <!-- =====================
+           COMPANY：会社情報
+           ===================== -->
       <section class="company_area">
         <div class="company_info">
-          <h2 class="company_title">COMPANY</h2>
-          <div class="company_small_title">会社情報</div>
-          <div class="company_border"></div>
+          <h2 class="company_title section_title_common">COMPANY</h2>
+          <div class="company_small_title section_subtitle_common">会社情報</div>
+          <div class="company_border section_border_common"></div>
+
+          <!-- 会社情報テーブル -->
           <table class="company_table">
             <tr>
               <th>会社名</th>
@@ -175,15 +222,16 @@
             </tr>
           </table>
         </div>
+
+        <!-- 社内イメージ -->
         <img class="company_img" src="img/company.jpg" alt="社内の風景" />
       </section>
     </main>
 
-    <!-- ===============================================
-         footerエリア
-         =============================================== -->
+    <!-- =====================
+         フッター
+         ===================== -->
     <footer class="footer_erea">
-      <!-- flex wedと会社情報を表示する -->
       <div class="footer_row">
         <img class="footer_logo" src="img/logo.svg" alt="WED" />
         <p class="footer_company_info">
@@ -191,12 +239,17 @@
           Shibuya-ku Tokyo, Japan 150-0031 T/99-9999-9999
         </p>
       </div>
-      <div class=""></div>
     </footer>
+
+    <!-- コピーライト -->
     <div class="copy_right">
       © Web Entertainment Design Inc.
     </div>
+
+    <!-- JavaScript -->
     <script src="js/work.js"></script>
+
+  </div>
 </body>
 
 </html>
