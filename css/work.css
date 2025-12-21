@@ -284,14 +284,17 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  /* centerから変更 */
   margin-bottom: 11rem;
+  background-color: #0ff394;
 }
 
 /* └ Flex子要素（左側：情報まとめ） */
 .company_info {
-  width: 56.7rem;
+  flex: 1;
+  /* width: 56.7rem; */
   height: 64rem;
-  background-color: #ffffff;
+  background-color: #d32121;
   padding-top: 11rem;
   padding-left: 6.2rem;
 }
@@ -351,7 +354,7 @@
 
 .footer_company_info {
   display: block;
-  width: 21.1rem;
+  /* width: 21.1rem; */
   margin-right: 4rem;
 }
 
