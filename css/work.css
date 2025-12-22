@@ -132,7 +132,7 @@
 }
 
 .news_item {
-  border-left: 1px solid #000;
+  border-left: 0.1rem solid #000;
   padding-left: 1rem;
 }
 
@@ -365,7 +365,7 @@
 }
 
 /* --- レイアウト確認用（完成したら消す） --- */
-div,
+/* div,
 section,
 article,
 header,
@@ -392,7 +392,7 @@ span,
 a,
 li {
   outline: 1px solid limegreen !important;
-}
+} */
 
 @media screen and (max-width: 699.98px) {
 
@@ -475,6 +475,20 @@ li {
 
   .news_list {
     gap: 4.9rem;
+  }
+
+
+  /* ┌─────────────────────────────────────────┐
+     │ レスポンシブ　ニュース　　　　　             │
+     └─────────────────────────────────────────┘ */
+  .news_item {
+    border-left: 0.1rem solid #000;
+    padding-left: 1rem;
+  }
+
+  .news_item:first-child {
+    border-left: 0.1rem solid #000;
+    padding-left: 1rem;
   }
 
   /* ┌─────────────────────────────────────────┐
@@ -573,6 +587,11 @@ li {
   .company_table td {
     padding-bottom: 0em;
   }
+
+  .company_area {
+    margin-bottom: 4rem;
+  }
+
 
   /* ┌─────────────────────────────────────────┐
      │ レスポンシブ　フッター                     │
